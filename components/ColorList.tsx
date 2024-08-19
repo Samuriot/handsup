@@ -10,7 +10,9 @@ const ColorList = ({color} : {color:any}) => {
           <View 
             key={opacity} 
             style={[styles.color, {backgroundColor: color, opacity}]} 
-          />
+          >
+            <Text>hello world</Text>
+          </View>
         ))
       }
     </ScrollView>
