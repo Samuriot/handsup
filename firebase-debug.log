@@ -1,0 +1,21 @@
+[debug] [2024-08-19T21:19:58.792Z] ----------------------------------------------------------------------
+[debug] [2024-08-19T21:19:58.794Z] Command:       /Users/jomikaelruiz/.nvm/versions/node/v22.6.0/bin/node /Users/jomikaelruiz/.nvm/versions/node/v22.6.0/bin/firebase init
+[debug] [2024-08-19T21:19:58.795Z] CLI Version:   13.15.2
+[debug] [2024-08-19T21:19:58.795Z] Platform:      darwin
+[debug] [2024-08-19T21:19:58.795Z] Node Version:  v22.6.0
+[debug] [2024-08-19T21:19:58.795Z] Time:          Mon Aug 19 2024 14:19:58 GMT-0700 (Pacific Daylight Time)
+[debug] [2024-08-19T21:19:58.795Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-19T21:19:58.801Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-19T21:19:58.802Z] > authorizing via signed-in user (runchers.co@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/jomikaelruiz/Desktop/cs/handsUp_New/hands-up
+
