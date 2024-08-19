@@ -5,13 +5,12 @@ import ColorList from '@/components/ColorList'
 import getConcert from '@/app/firebaseAPI'
 
 const Home = () => {
+    const concertList = getConcert();
     return (
         <SafeAreaView>
-            <ColorList color = "#DECEF4"/>
+            <ColorList />
         </SafeAreaView>
     )
 }
-
-getConcert();
 
 export default Home

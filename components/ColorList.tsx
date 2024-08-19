@@ -1,7 +1,8 @@
 import { View, Text, ScrollView, Image, StyleSheet } from 'react-native'
 import React from 'react'
 
-const ColorList = ({color} : {color:any}) => {
+const ColorList = () => {
+  let color = "#DECEF4";
   return (
     <ScrollView 
       contentContainerStyle={styles.container}>
@@ -11,7 +12,9 @@ const ColorList = ({color} : {color:any}) => {
             key={opacity} 
             style={[styles.color, {backgroundColor: color, opacity}]} 
           >
-            <Text>hello world</Text>
+            <Text style = {styles.artist}>artist</Text>
+            <Text style = {styles.location}>location</Text>
+            <Text style = {styles.date}>date</Text>
           </View>
         ))
       }
@@ -31,6 +34,22 @@ const styles = StyleSheet.create({
       paddingHorizontal: 20, 
       paddingVertical: 10, 
       height: '100%'
+    },
+    artist: {
+      marginTop: 80,
+      marginLeft: 25,
+      padding: 5
+    },
+    location: {
+      textAlign: "left",
+      marginTop: 0,
+      marginLeft: 25
+      
+    },
+    date: {
+      textAlign: "right",
+      marginTop: -15,
+      marginRight: 25
     }
 })
 

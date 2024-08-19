@@ -5,9 +5,7 @@ import {db} from "../firebaseConfig"
 
 const getConcert = async () => {
     const querySnapshot = await getDocs(collection(db, "concerts"))
-    querySnapshot.forEach((doc) => {
-        console.log(doc.id, "=>", doc.data());
-    });
+    return querySnapshot;
 };
 
 export default getConcert;
