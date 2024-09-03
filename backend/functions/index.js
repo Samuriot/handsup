@@ -34,16 +34,29 @@ app.post("/api/create", (req, res) => {
                 picture: req.body.picture,
             });
             return res.status(200).send();
-        }
-        catch (error) {
+        } catch (error) {
             console.log(error);
             return res.status(500).send(error);
         }
     })();
 });
 
-// Read
+// Read a specific concert based on ID
 // Get
+app.get("/api/read/:id", (req, res) => {
+    (async () => {
+        try {
+            const document = db.collection("concerts").doc(req.params.id);
+            let product = await document.get();
+            let response = product.data();
+
+            return res.status(200).send(response);
+        } catch (error) {
+            console.log(error);
+            return res.status(500).send(error);
+        }
+    })();
+});
 
 // Update
 // Put
